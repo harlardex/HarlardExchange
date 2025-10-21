@@ -1,0 +1,61 @@
+header{
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+header:after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.basket ul{
+  padding: 0;
+  margin-top: 40px;
+}
+.basket li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 40px 0;
+  width: 30%;
+  margin: 30px 1.5%;
+  text-align: center;
+  box-shadow: 0 5px 15px black;
+}
+.basket button{
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.basket header div{
+  float: right;
+  position: relative;
+  z-index: 1;
+}
+.basket header h1{
+  float: left;
+}
+
+.zoom{
+    position: absolute;
+    top: 60px;
+    right: 50%;
+    width: 35px;
+    animation: zoom 2s forwards;
+}
+.basket-icon {
+    animation: shake 0.5s 2s forwards;
+}
+
+@keyframes zoom {
+    0%{opacity: 0;}
+    50%{opacity: 1;}
+    100%{opacity: 0; right: -100px;}
+}
+@keyframes shake{
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(20deg);}
+    40%{transform: rotate(-20deg);}
+    60%{transform: rotate(20deg);}
+    80%{transform: rotate(-20deg);}
+    100%{transform: rotate(0deg);}
+}

@@ -1,0 +1,132 @@
+*{
+    padding: o;
+    margin: o;
+    box-sizing: border-box;
+}
+body{
+    color:floralwhite;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7))
+    ,url(images/contact-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nav ul{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    
+}
+.nav ul li{
+    width: 13%;
+    list-style: none;
+    margin: 3px auto;
+}
+.nav .head{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -10px;
+    margin-left: 30px;
+    width: 40%;
+}
+.nav li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    font-size: 18px;
+}
+header h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 2px;
+    text-decoration: underline;
+}
+header p{
+    text-align: center;
+    font-size: 20px;
+
+}
+main{
+    margin: 35px;
+}
+main h3{
+    font-size: 22px;
+    text-decoration:solid;
+    margin-left: 20px;
+}
+main p{
+    font-size: 18px;
+}
+main ul li{
+    font-size: 18px;
+}
+main i{
+    color: #4242c7;
+}
+aside h3{
+    font-size: 22px;
+    text-decoration:solid;
+    margin-left: 40px;
+}
+aside p{
+    font-size: 18px;
+    margin-left: 35px
+}
+aside form{
+    margin: 35px;
+}
+aside form input{
+    display: block;
+    width: 300px;
+    height: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #d9cdcdf0;
+}
+#screenshot{
+    background: none;
+}
+aside form label{
+    font-size: 20px;
+}
+aside form textarea{
+    display: block;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+    width: 600px;
+    height: 200px;
+    background-color: #d9cdcdf0;
+}
+aside form button{
+    height: 40px;
+    width: 100px;
+    margin-left: 40px;
+    background-color: aqua;
+    cursor: pointer;
+    border-radius: 10px;
+}
+footer{
+    margin: 35px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav ul{
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+    }
+    .nav ul li{
+        font-size: 20px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .nav .head{
+        width: 100%;
+        text-align: center;
+    }
+    aside form textarea{
+        width: 300px;
+    }
+}

@@ -1,0 +1,99 @@
+*{
+    padding: o;
+    margin: o;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6))
+    ,url(images/home-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.nav ul{
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    margin-top: 20px;
+    
+}
+.nav ul li{
+    width: 13%;
+    list-style: none;
+    margin: 3px auto;
+}
+.nav .head{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: -10px;
+    margin-left: 30px;
+    width: 40%;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav ul li a:hover{
+    font-size: 18px;
+}
+.intro{
+    color: aquamarine;
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 170px;
+}
+.intro h2{
+    font-size: 8vw;
+    margin-bottom: 1px;
+}
+.intro p{
+    font-size: 1.2em;
+    margin-top: 1px;
+}
+.intro button{
+    background-color: aquamarine;
+    margin-top: 10px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.intro button:hover{
+    background-color: white;
+    transform: scale(1.1);
+    transition: 0.4s;
+    font-weight: bold;
+    box-shadow: 0 0 10px aquamarine;
+}
+.intro button a{
+    text-decoration: none;
+    color: black;
+}
+footer{
+    text-align: center;
+    width: 98%;
+    margin: 0 auto;
+}
+/* responsiveness */
+@media screen and (max-width: 900px) {
+    .nav ul{
+        margin: 10px 0;
+        display: block;
+        text-align: center;
+    }
+    .nav ul li{
+        font-size: 20px;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .nav .head{
+        width: 100%;
+        text-align: center;
+    }
+    .intro{
+        margin-top: 90px;
+    }
+}
